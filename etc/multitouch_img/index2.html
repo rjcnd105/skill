@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+
+	<title>Title</title>
+	<style>
+		.ui_cvs_view{margin-top: 500px; width: 400px; height: 400px; position: relative; overflow: hidden;}
+		.ui_cvs_view canvas{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;}
+		#box1{ position: relative; background-color: blue; width: 100%; height: 200px;  color: white; font-size: 44px; }
+		#box2{ position: relative; background-color: red; width: 100%; height: 200px; color: white; font-size: 44px; }
+		#dimm{ position: absolute; z-index: 2; background-color: black; width: 100%; height: 100%; top: 0; left: 0; opacity:0; text-align: center; color: #ffffff; font-size: 50px;}
+	</style>
+	<script src="inc/js/jquery.min.js"></script>
+	<script src="inc/js/hammer.min.js"></script>
+	<script src="inc/js/js2.js"></script>
+
+</head>
+<body style="height:5000px">
+	<div class="ui_cvs_view">
+		<canvas data-src="../multitouch_img/inc/img/img.jpg"></canvas>
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<div id="dimm"> 두 손으로 움직여주세요. </div>
+	</div>
+</body>
+</html>

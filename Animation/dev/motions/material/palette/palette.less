@@ -1,0 +1,44 @@
+.transition (@transition) {
+  -webkit-transition: @transition;
+  -moz-transition:    @transition;
+  -ms-transition:     @transition;
+  -o-transition:      @transition;
+  transition:         @transition;
+}
+.transform(@string){
+  -webkit-transform: @string;
+  -moz-transform: 	 @string;
+  -ms-transform:     @string;
+  -o-transform: 	 @string;
+  transform:  		 @string;
+}
+
+////// FUNCTIONS //////
+
+.svg_center(){
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.palette{
+  .svg_center(); margin: 0 auto;
+}
+
+.palette .colors * {
+  cursor: pointer;
+}
+.whiteboard { overflow: hidden; }
+.whiteboard rect { transition: all .3s; }
+
+.dashline {
+  stroke-dashoffset: 25;
+  animation: dash 2s linear forwards infinite;
+}
+
+@keyframes dash {
+  to{stroke-dashoffset: 0}
+}

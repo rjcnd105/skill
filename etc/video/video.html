@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7" >
+	<title>Title</title>
+	<link href="http://vjs.zencdn.net/5.18.4/video-js.css" rel="stylesheet">
+
+	<!-- If you'd like to support IE8 -->
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js"></script>-->
+	<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+</head>
+<body>
+		<video id="my-video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="264" data-setup="{}">
+				<source src="cat.mp4" type='video/mp4'>
+				<p class="vjs-no-js">
+						To view this video please enable JavaScript, and consider upgrading to a web browser that
+						<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+				</p>
+		</video>
+
+		<script src="http://vjs.zencdn.net/5.18.4/video.js"></script>
+		<!--<script src="./video.js"></script>-->
+		<!--<script src="./tech.js"></script>-->
+		<script>
+				var player = videojs('my-video');
+				player.ready(function () {
+					// 플레이 했을시 실행되는
+					player.on('play', function () {
+							console.log('play!');
+							//player.requestFullscreen();  // 풀스크린(브라우저에서 막힘)
+					});
+					  // player.isFullscreen();    // 풀스크린인지
+						// player.exitFullscreen();  // 풀스크린 나가기
+						// player.currentTime()      // 현재 시간 가져오기
+						// player.duration()         //- Total Time Flash X
+
+						// 동영상 플레이 시간의 경과에 따라 실행되는 함수
+						player.on('timeupdate', function (e) {
+							console.log(player.currentTime());
+								if(player.currentTime() > 5){
+									if(player.isFullscreen()){
+											player.exitFullscreen();
+									}
+									// 멈춤
+									player.pause();
+								}
+						});
+						//console.log(player);
+				});
+
+		</script>
+</body>
+</html>

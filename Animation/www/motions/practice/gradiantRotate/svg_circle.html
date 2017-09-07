@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="../../../inc/js/gsap-v1_19_1/src/uncompressed/TweenMax.js"></script>
+	<script src="../../../inc/js/gsap-v1_19_1/src/uncompressed/plugins/DrawSVGPlugin.js"></script>
+	<script src="../../../inc/js/jquery.js"></script>
+	<style>
+		body {
+			margin: 0;
+			background: #333;
+			overflow: hidden;
+		}
+		svg {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			opacity: 0;
+			margin: auto;
+		}
+		circle {
+			fill: white;
+		}
+	</style>
+</head>
+<body>
+<svg width="600" height="600" >
+	<g id="g1">
+		<linearGradient id="SVGID_1_" x1="0" y1="0" x2="1" y2="0.75" >
+			<stop offset="0%" stop-color="#F22A41"/>
+			<stop offset="49%" stop-color="#EF8F2B"/>
+			<stop offset="100%" stop-color="#4F91CD"/>
+		</linearGradient>
+		<ellipse fill="none" stroke="url(#SVGID_1_)" stroke-miterlimit="10" cx="300" cy="300" rx="168" ry="276"/>
+	</g>
+	<g id="g2">
+		<linearGradient id="SVGID_2_" x1="0" y1="0" x2="1" y2="0.75" >
+			<stop offset="0%" stop-color="#F22A41"/>
+			<stop offset="49%" stop-color="#EF8F2B"/>
+			<stop offset="100%" stop-color="#4F91CD"/>
+		</linearGradient>
+		<ellipse fill="none" stroke="url(#SVGID_2_)" stroke-miterlimit="10" cx="300" cy="300" rx="168" ry="276"/>
+	</g>
+	<g id="g3">
+		<linearGradient id="SVGID_3_" x1="0" y1="0" x2="1" y2="0.75" >
+			<stop offset="0%" stop-color="#F22A41"/>
+			<stop offset="49%" stop-color="#EF8F2B"/>
+			<stop offset="100%" stop-color="#4F91CD"/>
+		</linearGradient>
+		<ellipse fill="none" stroke="url(#SVGID_3_)" stroke-miterlimit="10" cx="300" cy="300" rx="168" ry="276"/>
+	</g>
+	<g id="g4">
+		<linearGradient id="SVGID_4_" x1="0" y1="0" x2="1" y2="0.75" >
+			<stop offset="0%" stop-color="#F22A41"/>
+			<stop offset="49%" stop-color="#EF8F2B"/>
+			<stop offset="100%" stop-color="#4F91CD"/>
+		</linearGradient>
+		<ellipse fill="none" stroke="url(#SVGID_4_)" stroke-miterlimit="10" cx="300" cy="300" rx="168" ry="276"/>
+	</g>
+
+	<g id="g11">
+		<linearGradient id="SVGID_1_" x1="0" y1="0" x2="1" y2="0.75" >
+			<stop offset="0%" stop-color="#F22A41"/>
+			<stop offset="49%" stop-color="#EF8F2B"/>
+			<stop offset="100%" stop-color="#4F91CD"/>
+		</linearGradient>
+		<ellipse fill="none" stroke="url(#SVGID_1_)" stroke-miterlimit="10" cx="300" cy="300" rx="168" ry="276"/>
+	</g>
+	<g id="g22">
+		<linearGradient id="SVGID_2_" x1="0" y1="0" x2="1" y2="0.75" >
+			<stop offset="0%" stop-color="#F22A41"/>
+			<stop offset="49%" stop-color="#EF8F2B"/>
+			<stop offset="100%" stop-color="#4F91CD"/>
+		</linearGradient>
+		<ellipse fill="none" stroke="url(#SVGID_2_)" stroke-miterlimit="10" cx="300" cy="300" rx="168" ry="276"/>
+	</g>
+	<g id="g33">
+		<linearGradient id="SVGID_3_" x1="0" y1="0" x2="1" y2="0.75" >
+			<stop offset="0%" stop-color="#F22A41"/>
+			<stop offset="49%" stop-color="#EF8F2B"/>
+			<stop offset="100%" stop-color="#4F91CD"/>
+		</linearGradient>
+		<ellipse fill="none" stroke="url(#SVGID_3_)" stroke-miterlimit="10" cx="300" cy="300" rx="168" ry="276"/>
+	</g>
+	<g id="g44">
+		<linearGradient id="SVGID_4_" x1="0" y1="0" x2="1" y2="0.75" >
+			<stop offset="0%" stop-color="#F22A41"/>
+			<stop offset="49%" stop-color="#EF8F2B"/>
+			<stop offset="100%" stop-color="#4F91CD"/>
+		</linearGradient>
+		<ellipse fill="none" stroke="url(#SVGID_4_)" stroke-miterlimit="10" cx="300" cy="300" rx="168" ry="276"/>
+	</g>
+</svg>
+<script>
+	function svgSet() {
+	  TweenMax.set("#g1", {transformOrigin:"50% 50%"});
+	  TweenMax.set("#g2", {transformOrigin:"50% 50%", rotation:45});
+	  TweenMax.set("#g3", {transformOrigin:"50% 50%", rotation:90});
+	  TweenMax.set("#g4", {transformOrigin:"50% 50%", rotation:135});
+
+	  TweenMax.set("#g11", {transformOrigin:"50% 50%"});
+	  TweenMax.set("#g22", {transformOrigin:"50% 50%", rotation:45});
+	  TweenMax.set("#g33", {transformOrigin:"50% 50%", rotation:90});
+	  TweenMax.set("#g44", {transformOrigin:"50% 50%", rotation:135});
+	  TweenMax.set("#g1, #g2, #g3, #g4", {drawSVG:0});
+	  TweenMax.set("#g11, #g22, #g33, #g44", {opacity:0});
+  }
+  svgSet();
+
+	function svgCircle() {
+
+	  var i = 0;
+	  var num1 = 1;
+	  var repeat = 0;
+
+	  var glist = ["#g1", "#g2", "#g3", "#g4"];
+	  var hide = [];
+
+	  var icut = function (arr, i) {
+		  var arr = Array.prototype.slice.call(arr);
+		  arr.splice(i, 1);
+		  return arr;
+	  };
+
+	  TweenMax.to("#g11, #g22, #g33, #g44", 2, {opacity:0.12});
+	  TweenMax.fromTo("#g1 ellipse", 1.2, {opacity:0.8, drawSVG:0}, {opacity:1, drawSVG:"100%", ease:Power2.easeOut});
+
+	  TweenMax.fromTo("#g4 ellipse", 0.7, {opacity:0.8, drawSVG:0}, {delay:0.4, opacity:1, drawSVG:"100%", ease:Power2.easeOut});
+	  TweenMax.fromTo("#g2 ellipse", 0.7, {opacity:0.8, drawSVG:0}, {delay:0.7, opacity:1, drawSVG:"100%", ease:Power2.easeOut});
+	  TweenMax.fromTo("#g3 ellipse", 0.7, {opacity:0.8, drawSVG:0}, {delay:0.10, opacity:1, drawSVG:"100%", ease:Power2.easeOut});
+	  TweenMax.set("svg", {scale:1.15});
+
+	  TweenMax.to("svg", 120, {rotation: "+=3800", transformOrigin:"50% 50%", ease: Linear.easeNone, repeat:-1});
+
+	  function angleToPoints(angle) {
+		  var segment = Math.floor(angle / Math.PI * 2) + 2;
+		  var diagonal =  (1/2 * segment + 1/4) * Math.PI;
+		  var op = Math.cos(Math.abs(diagonal - angle)) * Math.sqrt(2);
+		  var x = op * Math.cos(angle);
+		  var y = op * Math.sin(angle);
+
+		  return {
+			  x1: x < 0 ? 1 : 0,
+			  y1: y < 0 ? 1 : 0,
+			  x2: x >= 0 ? x : x + 1,
+			  y2: y >= 0 ? y : y + 1
+		  };
+	  }
+
+	  function toRadians(degrees) {
+		  return degrees / 180 * Math.PI;
+	  }
+
+
+	  function loop() {
+		  requestAnimationFrame(function() {
+			  var angle = toRadians(i - 180);
+			  var pair = angleToPoints(angle);
+
+			  TweenMax.set("#SVGID_1_, #SVGID_2_, #SVGID_3_, #SVGID_4_", {attr:{x1: pair.x1, x2: pair.x2, y1: pair.y1, y2: pair.y2}});
+
+			  if((i % 90 === 0 || i % 90 === 0.5) && repeat > 75){
+				  num1 += 1;
+//				TweenMax.fromTo(glist[Math.floor(Math.random() * 100) % glist.length] + " ellipse", 0.6, {drawSVG:0, opacity:0.3}, {drawSVG:"100%", opacity:1, ease:Power2.easeOut});
+				  TweenMax.to(glist[num1 % glist.length] + " ellipse", 0.3, {drawSVG:0, opacity:0.3, ease:Power2.easeOut});
+				  TweenMax.to(glist[num1 % glist.length] + " ellipse", 0.6, {delay:0.3, drawSVG:"100%", opacity:1, ease:Power2.easeOut});
+			  }
+			  repeat++;
+			  i = (i + 2.5) % 360;
+			  loop();
+		  });
+	  }
+	  loop();
+  }
+  window.setTimeout(function () {
+  	  TweenMax.set("svg", {opacity:1});
+		  svgCircle();
+  }, 1000);
+
+</script>
+</body>
+</html>

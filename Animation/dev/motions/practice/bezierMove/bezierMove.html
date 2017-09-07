@@ -1,0 +1,37 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Document</title></head><script type="text/javascript" src="../../../inc/js/jquery.js"></script><script type="text/javascript" src="../../../inc/js/gsap-v1_19_1/src/uncompressed/TweenMax.js"></script><style>div { width: 100px; height: 100px; }
+
+.aaa { background-color: #ff0; position: absolute; }
+
+.bbb { background-color: #f0f; position: absolute; }
+
+.ccc { background-color: #f00; position: absolute; }</style><script>var atl = new TimelineMax();
+$(document).ready(function () {
+	TweenMax.to(".aaa", 5,
+		{
+			bezier: {
+				curviness: 2.5,
+				values: [{x: 100, y: 250}, {x: 300, y: 0}, {x: 500, y: 400}],
+				autoRotate: true
+			},
+			backgroundColor: "#faf", ease: Power3.easeInOut
+		}
+	);
+	TweenMax.to(".bbb", 5,
+		{
+			bezier: {
+				type: "cubic",
+				values: [{x: 0, y: 0}, {x: 150, y: 100}, {x: 300, y: 500}, {x: 500, y: 400}],
+				autoRotate: ["x", "y", "rotation", 45, false]
+			},
+			ease: Power1.easeInOut, backgroundColor: "#0ff"
+		});
+	TweenMax.to(".ccc", 5,
+		{
+			bezier: {
+				type: "soft",
+				values: [{x: 0, y: 0}, {x: 1100, y: 400}, {x: 50, y: 50}, {x: 500, y: 400}],
+				autoRotate: false
+			},
+			ease: Power1.easeInOut, backgroundColor: "#a85"
+		});
+});</script><body><div class="aaa"></div><div class="bbb"></div><div class="ccc"></div></body></html>

@@ -1,0 +1,7 @@
+.palette{position:absolute;top:0;right:0;bottom:0;left:0;margin:0 auto}
+.palette .colors *{cursor:pointer}
+.whiteboard{overflow:hidden}
+.whiteboard rect{transition:all .3s}
+.dashline{animation:dash 2s linear forwards infinite;stroke-dashoffset:25}
+@keyframes dash{to{stroke-dashoffset:0}
+}

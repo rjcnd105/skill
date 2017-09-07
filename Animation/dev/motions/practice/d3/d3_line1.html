@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		.line {
+			fill: none;
+			stroke: steelblue;
+			stroke-width: 2px;
+		}
+		.area{
+			fill: skyblue;
+			opacity:0.4;
+		}
+
+		.grid line{
+			stroke: lightgrey;
+			strock-opacity: 0.7;
+			shape-rendering: crispEdges;
+		}
+		.grid path{
+			stroke-width: 0;
+		}
+
+		.close_line {
+			stroke: darkblue;
+			stroke-opacity: 0.7;
+			stroke-width: 2px;
+			stroke-dasharray: 2px 3px;
+			shape-rendering: crispEdges;
+		}
+		.open_line {
+			stroke: red;
+			stroke-opacity: 0.7;
+			stroke-width: 2px;
+			stroke-dasharray: 2px 3px;
+			shape-rendering: crispEdges;
+		}
+	</style>
+	<script src="js/d3.js"></script>
+</head>
+<body>
+	<div class="wrap">
+	</div>
+	<script>
+	  // 그래프의 w,h 와 margin 값을 설정
+	  var margin = {top: 30, right: 40, bottom: 100, left: 40},
+		  width = 960 - margin.left - margin.right,
+		  height = 600 - margin.top - margin.bottom;
+
+	  // parse the date / time
+		// var parseTime = d3.timeParse("%y-%m-%d");
+
+	  // set the ranges
+	  var x = d3.scaleTime().range([0, width]);
+	  var y = d3.scaleLinear().range([height, 0]);
+
+	  // line 값 정의 .data를 받은 데이터를 좌표로 어떻게 반환할지.
+	  var valline_close = d3.line()
+		.x(function(d) { return x(d.date); })
+		.y(function(d) { return y(d.close); }); // polyfill
+
+		// area 값 정의
+		var area = d3.area()
+			.x(function(d) { return x(d.date); })
+			.y0(height)   // y0(0)으로 하면 반전 !
+			.y1(function(d) { return y(d.close); });
+
+		function xGridlines(num) { return d3.axisBottom(x).ticks(num); }
+		function yGridlines(num) { return d3.axisLeft(y).ticks(num);   }
+
+		// append the svg object to the body of the page
+	  // appends a 'group' element to 'svg'
+	  // moves the 'group' element to the top left margin
+	  var svg = d3.select(".wrap").append("svg")
+		  .attr("width", width + margin.left + margin.right)
+		  .attr("height", height + margin.top + margin.bottom)
+		  .append("g")
+		  .attr("transform",
+			  "translate(" + margin.left + ", " + margin.top + ")");
+
+		// format the data
+		function typeClose(d) {
+			d.date = new Date(d.date);
+			d.close = +d.close;
+			return d
+		}
+		function typeOpen(d) {
+			d.date = new Date(d.date);
+			d.open = +d.open;
+			return d
+		}
+	  // Get the data
+	  d3.csv("data/data.csv", typeClose, function(error, data) {
+		  if (error) throw error;
+
+		  // Scale the range of the data
+		  x.domain(d3.extent(data, function(d) { return d.date; }));
+		  y.domain([0, d3.max(data, function(d) { return d.close; })]);
+
+			// Add X gridlines
+			svg.append("g")
+					.attr("class", "grid")
+					.attr("transform", "translate(0," + height + ")")
+					.call(xGridlines(10).tickSize(-height).tickFormat(""));
+
+			// Add Y gridlines
+			svg.append("g")
+					.attr("class", "grid")
+					.call(yGridlines(5).tickSize(-width).tickFormat(""));
+
+		  // Add the valline_close path.
+		  svg.append("path")
+			    .data([data])
+			    .attr("class", "line")
+			    .style("stroke-dasharray", "5, 3")
+			    .attr("d", valline_close.curve(d3.curveStepAfter));
+
+		  // Add the valuearea path
+		  svg.append("path")
+				  .data([data])
+				  .attr("class", "area")
+				  .attr("d", area.curve(d3.curveStepAfter));
+
+		  // Add circle
+		  svg.selectAll("circle.dot").data(data).enter().append("circle")
+				  .attr("class", "dot")
+				  .attr("r", 5)
+				  .attr("cx", function(d) { return x(d.date); })
+				  .attr("cy", function(d) { return y(d.close); })
+				  .attr("fill", "darkblue")
+				  .style("cursor", "pointer")
+				  .on("mouseover", function(d, i){
+				  	var d3_this = d3.select(this);
+		        d3_this.attr("r", 8);
+				  }).on("mouseleave", function (d, i) {
+	          var d3_this = d3.select(this);
+		        d3_this.attr("r", 5);
+		      }).on("click", function(d, i){
+		        var d3_this = d3.select(this);
+		        var dottext = svg.select(".dotdesc.t"+i);
+		        if (dottext.size() >= 1) {
+							dottext.remove();
+							return;
+		        }
+					  svg.append("text")
+							  .attr("class", "dotdesc t" + i)
+							  .html(d3.timeFormat("%Y-%m-%d")(d.date))
+							  .attr("x", d3_this.attr("cx"))
+							  .attr("y", d3_this.attr("cy") - 12)
+							  .attr("text-anchor", "middle")
+							  .attr("font-size", "12")
+							  .attr("fill", "darkblue");
+		        d3_this.attr("data-desc-show", true);
+		      });
+
+		  // Add the X Axis
+		  svg.append("g")
+				  .attr("transform", "translate(0," + height + ")")
+				  .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%Y-%m-%d")))
+				  .selectAll("text")
+				  .style("text-anchor", "end")
+				  .attr("dx", "-.8em")
+				  .attr("dy", ".15em")
+				  .attr("transform", "rotate(-55)");
+
+		  // Add the Y Axis
+		  var closeAxisY = svg.append("g")
+			    .call(d3.axisRight(y));
+		  closeAxisY.selectAll("text").attr("fill", "steelblue");
+		  closeAxisY.selectAll("line").attr("stroke", "steelblue");
+
+		  var minDate = d3.min(data, function(d){return new Date(d.date)});
+//		  var dateVrange = d3.scaleLinear()
+//				  .domain(d3.extent(data, function(d){return d.date}))
+//				  .range(d3.extent(data, function(d){return d.close}));
+//		  console.log(dateVrange)
+
+		  // Add followLine
+			var closeline = svg.on("mousemove.open", function (d, i) {
+					  var position = d3.mouse(svg.node());
+		        closeline
+								.attr("x1", 0)
+								.attr("x2", width)
+								.attr("y1", position[1])
+								.attr("y2", position[1]);
+		        //console.log( x.invert(position[0]).getTime() - minDate.getTime() )
+				  }).on("mouseleave.open", function (d, i) {
+				  	closeline.style("display", "none");
+				  }).on("mouseover.open", function (d, i){
+						closeline.style("display", "block");
+					})
+					.insert("line", ":first-child")
+					.attr("class", "close_line");
+
+			drawOpenAxis()
+	  });
+
+		function drawOpenAxis() {
+			var x2 = x.copy();
+			var y2 = y.copy();
+			var valline_open =  d3.line()
+				.x(function(d) { return x2(d.date); })
+				.y(function(d) { return y2(d.open); });
+
+			d3.csv("data/data2.csv", typeOpen, function (err, data) {
+				x2.domain(d3.extent(data, function(d){ return d.date; }));
+				y2.domain([0, d3.max(data, function(d){ return d.open; }) * 1.2]);
+
+			// Add the valuearea path2
+			svg.append("path")
+				.data([data])
+				.attr("class", "line")
+				.style("stroke", "red")
+				.attr("d", valline_open.curve(d3.curveBundle));
+
+			var openAxisY = svg.append("g")
+				.attr("transform", "translate("+ width +", 0)")
+				.call(d3.axisLeft(y2));
+			openAxisY.selectAll("text").attr("fill", "red");
+			openAxisY.selectAll("line").style("stroke", "red");
+
+	    // Add followLine
+		  var openline = svg.on("mousemove.close", function (d, i) {
+			  var position = d3.mouse(svg.node());
+			  openline
+				  .attr("x1", position[0])
+				  .attr("x2", position[0])
+				  .attr("y1", 0)
+				  .attr("y2", height)
+		  }).on("mouseleave.close", function (d, i) {
+				openline.style("display", "none");
+		  }).on("mouseover.close", function (d, i){
+				openline.style("display", "block");
+		  })
+			  .insert("line", ":first-child")
+			  .attr("class", "open_line");
+			});
+		}
+
+	</script>
+</body>
+</html>

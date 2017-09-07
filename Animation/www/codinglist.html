@@ -1,0 +1,213 @@
+<!DOCTYPE html><!--[if IE 7]><html lang="ko" class="ie7"><![endif]--><!--[if IE 8]><html lang="ko" class="ie8"><![endif]--><!--[if IE 9]><html lang="ko" class="ie9"><![endif]--><!--[if gt IE 9]><!--><html lang="ko"><!--<![endif]--><head><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta charset="utf-8"><meta name="keywords" content=""><meta name="description" content=""><title>코딩리스트 - 고정 타이틀 값 넣기</title><link href="./inc/css/reset.css" type="text/css" rel="stylesheet"><!--link(href="#{currentUrl}inc/css/print.css", type='text/css', rel='stylesheet')--><link href="./inc/css/common.css" type="text/css" rel="stylesheet"><style type="text/css">a:hover{text-decoration:underline;color:#f5550d;}
+#guide h1{margin:20px 0;font-size:34px;}
+#guide h1 strong{margin-left:20px}
+#guide .logo{display:block;position:absolute;left:20px;top:20px}
+#guide .header{position:relative}
+
+.util{float:left;}
+.util li{float:left;width:185px;height:30px;margin:0 2px;border:1px solid #cdcdcd;line-height:30px;text-align:center;list-style:none;background-color:#555}
+.util li a{font-weight:bold;color:#fff}
+.working{float:right;margin-top:10px;padding-left:20px;}
+.working li{float:left;list-style:none;margin-right:30px;}
+
+.selected a{display:block;color:#f5550d;margin-right:5px;padding:0 0 3px 20px;background:url("./images/common/end.gif") no-repeat 0 0;}
+.edit a{display:block;color:#e9005d;margin-right:5px;padding:0 0 3px 20px;background:url("./images/common/edit.gif") no-repeat 0 0;}
+.confirm a{display:block;color:#168831;margin-right:5px;padding:0 0 3px 20px;background:url("./images/common/ing.gif") no-repeat 0 0;}
+
+.gnb{margin-top:20px;border:1px solid #666666;}
+.gnb a{display:inline-block;float:left;padding:10px 20px;font-weight:bold;background:url("./images/common/line.gif") no-repeat left center;}
+.gnb .first_child{background:none;}
+
+.notice_menu{padding:10px 0;border:1px solid #666666;border-top:0;text-align:center;color:red;}
+
+.coding_list{border-top:1px solid #ddd;border-left:1px solid #ddd;margin:0 0 20px 0;width:100%;font-size:12px;}
+.coding_list th{padding:5px 0 3px;font-weight:bold;background:#f9f9f9;border:1px solid;line-height:18px;}
+.coding_list td{border-right:1px solid #ddd;border-bottom:1px solid #ddd;padding:3px 5px;vertical-align:top;}
+.coding_list td:hover{background:#f7f7f7;}
+.coding_list td.none{background:#000;}
+.coding_list th,.coding_list td {padding:10px 5px!important}
+h2{margin-top:20px;font-size:15px;color:#666;margin-left:5px}
+
+.effect{position:relative;height:100%;display:none;}
+#effect0{display :block}
+
+
+</style><script src="./inc/js/jquery.js" type="text/javascript" charset="utf-8"></script><!--script(src="#{currentUrl}inc/js/common.js", type='text/javascript', charset='utf-8')--><script type="text/javascript">// 해당 메뉴 컨텐츠 show, hide
+$(document).ready(function(){
+
+	//- $('.insert_mobile').html($('table').find('.show_mobile').parent().parent().clone());
+	//- 기존의 코딩리스트 항목중에 특정 항목들을 분류해서 새로운 카테고리에 나타날때 쓰임.
+	//- 위 소스는 클래스를 찾아서 분류함
+	//- ().html(); 은 특정 부분에 삽입 하는 소스 이고, 이때 clone() 해줘야 기존 소스는 남겨두고 복사함.
+
+	//- $('.insert_mobile').html($('table').filter(':contains(pop_)').parent().clone());
+	//- 기존의 코딩리스트 항목중에 특정 항목들을 분류해서 새로운 카테고리에 나타날때 쓰임.
+	//- 위 소스는 pop_ 이라는 단어를 필터링 해서 분류함
+	//- ().html(); 은 특정 부분에 삽입 하는 소스 이고, 이때 clone() 해줘야 기존 소스는 남겨두고 복사함.
+
+	for(i = 0;i <= $('.coding_list').length;i++){
+		tableRowSpanning($('table#table' + i), 3);
+		tableRowSpanning($('table#table' + i), 2);
+		tableRowSpanning($('table#table' + i), 1);
+		tableRowSpanning($('table#table' + i), 0);
+	};
+	$(".gnb a").click(function(e){
+		e.preventDefault();
+		var currentId = $(this).index();
+		//alert(currentId );
+		$(".effect").hide();
+		$("#effect"+currentId+"").fadeIn("fast");
+	});
+});
+
+
+// 테이블 그리기
+function tableRowSpanning(Table, spanning_row_index)
+{
+var RowspanTd = false;
+var RowspanText = false;
+var RowspanCount = 0;
+var Rows = $('tbody tr', Table);
+$.each(Rows, function() {
+var This = $('td', this)[spanning_row_index];
+var text = $(This).text();
+if(RowspanTd == false)
+{
+RowspanTd = This;
+RowspanText = text;
+RowspanCount = 1;
+}
+else if(RowspanText != text)
+{
+$(RowspanTd)
+.attr('rowSpan', RowspanCount);
+RowspanTd = This;
+RowspanText = text;
+RowspanCount = 1;
+}
+else
+{
+$(This)
+.remove();
+RowspanCount++;
+}
+});
+// 반복 종료 후 마지막 rowspan 적용
+$(RowspanTd)
+.attr('rowSpan', RowspanCount);
+}
+
+
+</script></head><body><!--[if lte IE 7]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]--><div class="dimm"><img src="./images/common/blank_size_100.png" alt=""></div><div id="wrap"><div id="header"><!-- header include --><!-- header include --></div><div id="guide"><h1>프로젝트 이름</h1><div class="util_wrap clfix"><!-- 외부코딩 리스트 링크 --><ul class="util clfix"><li><a href="#" target="_blank">외부링크1</a></li><li><a href="#" target="_blank">외부링크2</a></li><li><a href="#" target="_blank">외부링크3</a></li><li><a href="/pattern/pattern.html" target="_blank">Pattern</a></li></ul><!-- 아이콘 범주 --><ul class="working clfix"><li><img src="./images/common/ing.gif" alt="확인요청">확인요청</li><li><img src="./images/common/edit.gif" alt="수정 중">수정 중</li><li><img src="./images/common/end.gif" alt="완료">완료</li></ul></div><!-- 카테고리 메뉴 --><div class="gnb clfix"><a href="#" class="first_child">Main</a><a href="#">카테고리 명</a><a href="#">PROTOTYPE</a></div><div class="notice_menu"><p>확인 하실 메뉴를 클릭해 주세요!</p></div><!-- 리스트 시작 --><div id="effect0" class="effect"><h2>Main</h2><table id="table0" class="coding_list"><colgroup><col width="10%"><col width="10%"><col width="10%"><col width="10%"><col width="12%"><col width="5%"><col width="13%"><col width="15%"><col width="*"></colgroup><thead><tr><th>1deth</th><th>2depth</th><th>3depth</th><th>4depth</th><th>비고</th><th>작업자</th><th>folder</th><th>filename</th><th>issue</th></tr></thead><tbody><tr><td>메인</td><td> </td><td> </td><td> </td><td></td><td>작업자</td><td>/</td><td class="selected"><a href="./index.html" target="_blank">index.html</a></td><td></td></tr></tbody></table></div><div id="effect1" class="effect"><h2>카테고리 명</h2><table id="table1" class="coding_list"><colgroup><col width="10%"><col width="10%"><col width="10%"><col width="10%"><col width="12%"><col width="5%"><col width="13%"><col width="15%"><col width="*"></colgroup><thead><tr><th>1deth</th><th>2depth</th><th>3depth</th><th>4depth</th><th>비고</th><th>작업자</th><th>folder</th><th>filename</th><th>issue</th></tr></thead><tbody><tr><td>카테고리 명</td><td> </td><td> </td><td> </td><td></td><td>작업자</td><td>/</td><td class="edit"><a href="./.html" target="_blank">파일이름</a></td><td></td></tr></tbody></table></div><div id="effect2" class="effect"><h2>Prototype</h2><table id="table2" class="coding_list"><colgroup><col width="10%"><col width="10%"><col width="10%"><col width="10%"><col width="12%"><col width="5%"><col width="13%"><col width="15%"><col width="*"></colgroup><thead><tr><th>1deth</th><th>2depth</th><th>3depth</th><th>4depth</th><th>비고</th><th>작업자</th><th>folder</th><th>filename</th><th>issue</th></tr></thead><tbody><tr><td>카테고리 명</td><td> </td><td> </td><td> </td><td></td><td>작업자</td><td>/prototype/</td><td class="edit"><a href="./.html" target="_blank">파일이름</a></td><td></td></tr></tbody></table></div></div><div id="footer"><!-- footer include --><!-- footer include --></div></div></body></html>					<tr>
+								<td>메인</td>
+								<td> </td>
+								<td> </td>
+								<td> </td>
+								<td></td>
+								<td>작업자</td>
+								<td>/</td>
+								<td class="selected">
+									<a href="./index.html" target="_blank">index.html</a>
+								</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="effect1" class="effect">
+					<h2>카테고리 명</h2>
+					<table id="table1" class="coding_list">
+						<colgroup>
+							<col width="10%">
+							<col width="10%">
+							<col width="10%">
+							<col width="10%">
+							<col width="12%">
+							<col width="5%">
+							<col width="13%">
+							<col width="15%">
+							<col width="*">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>1deth</th>
+								<th>2depth</th>
+								<th>3depth</th>
+								<th>4depth</th>
+								<th>비고</th>
+								<th>작업자</th>
+								<th>folder</th>
+								<th>filename</th>
+								<th>issue</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>카테고리 명</td>
+								<td> </td>
+								<td> </td>
+								<td> </td>
+								<td></td>
+								<td>작업자</td>
+								<td>/</td>
+								<td class="edit">
+									<a href="./.html" target="_blank">파일이름</a>
+								</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="effect2" class="effect">
+					<h2>Prototype</h2>
+					<table id="table2" class="coding_list">
+						<colgroup>
+							<col width="10%">
+							<col width="10%">
+							<col width="10%">
+							<col width="10%">
+							<col width="12%">
+							<col width="5%">
+							<col width="13%">
+							<col width="15%">
+							<col width="*">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>1deth</th>
+								<th>2depth</th>
+								<th>3depth</th>
+								<th>4depth</th>
+								<th>비고</th>
+								<th>작업자</th>
+								<th>folder</th>
+								<th>filename</th>
+								<th>issue</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>카테고리 명</td>
+								<td> </td>
+								<td> </td>
+								<td> </td>
+								<td></td>
+								<td>작업자</td>
+								<td>/prototype/</td>
+								<td class="edit">
+									<a href="./.html" target="_blank">파일이름</a>
+								</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id="footer">
+				<!-- footer include -->
+				<!-- footer include -->
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html><!--[if IE 7]><html lang="ko" class="ie7"><![endif]--><!--[if IE 8]><html lang="ko" class="ie8"><![endif]--><!--[if IE 9]><html lang="ko" class="ie9"><![endif]--><!--[if gt IE 9]><!--><html lang="ko"><!--<![endif]--><head><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta charset="utf-8"><meta name="keywords" content=""><meta name="description" content=""><title>페이지마다 변경되는 타이틀을 넣어주세요. - 고정 타이틀 값 넣기</title><link href="./inc/css/reset.css" type="text/css" rel="stylesheet"><!--link(href="#{currentUrl}inc/css/print.css", type='text/css', rel='stylesheet')--><link href="./inc/css/common.css" type="text/css" rel="stylesheet"><style>.content { width: 100%; padding-top: 100px;}
+.content h3 { text-align: center; font-weight: normal; color: #f5550d; font-size: 18px;}
+.content dt { background-color: #555; color: #ffffff; font-size: 20px; padding:7px 10px; margin-top: 30px;}
+.content dd { background-color: #f7f7f7; color: #333; font-weight: bold; font-size: 16px; padding:7px 10px;}
+.content dd:hover, .content dd:focus{ background-color: #FCDC4A;}
+.content dd a{ font-weight: normal; }
+.content dd .browser { float: right; }
+.content dd span{ display: block; float: left; font-size: 11px; letter-spacing: -1px; color: #555;}
+.content dd img{ float: left; width: 20px; height: 20px; }</style><script src="./inc/js/jquery.js" type="text/javascript" charset="utf-8"></script><!--script(src="#{currentUrl}inc/js/common.js", type='text/javascript', charset='utf-8')--></head><body><!--[if lte IE 7]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]--><div class="dimm"><img src="./images/common/blank_size_100.png" alt=""></div><div id="wrap"><div id="header"><!-- header include --><!-- header include --></div><div class="content"></div><script>var data = $.get('../files.json', function (d) {
+	console.log(d);
+	var htmlCode = '<h3>UI 패턴 제작 리스트 - 김회준</h3>';
+	for(var head in d){
+		htmlCode += '<dt>' + head + '</dt>'
+		for(var list in d[head]){
+			console.log(d[head][list])
+			d[head][list]['html'] = d[head][list]['html'].replace('C:\\workspace\\skill\\Animation/www', 'http://uxdev.etribe.co.kr/ux_motion');
+			htmlCode += '<dd>' + list + " : " + '<a href = "' + d[head][list]['html']+ '">' + d[head][list]['html'] + ' </a>';
+
+			if(d[head][list]['browser']){
+				htmlCode += '<div class="browser">' + $.map(d[head][list]['browser'].split(' '), function (v, i) {
+					console.log(v, i);
+					var browserHtml = '';
+					var matchStr = v.match(/([a-z]+)(\d{0,})/);
+					console.log(matchStr);
+					browserHtml += '<img src="./inc/img/' + matchStr[1] + '.png"/>';
+					browserHtml += '<span>' + matchStr[2] + '</span>';
+					return browserHtml
+				}).join('') + "</div>";
+			}
+			htmlCode += "</dd>";
+		}
+	}
+	$('.content').append(htmlCode);
+});</script><div id="footer"><!-- footer include --><!-- footer include --></div></div></body></html>

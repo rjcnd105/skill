@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<script
+				src="https://code.jquery.com/jquery-1.12.4.min.js"
+				integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+				crossorigin="anonymous"></script>
+		<style>
+				#youtube { position: absolute; }
+				.thumbnail { position: absolute; top: 0; left: 0; z-index:1;}
+				.ytp-button { border: none; background-color: transparent; padding: 0; color: inherit; text-align: inherit; font-size: 100%; }
+				.ytp-button:not([aria-disabled=true]):not([disabled]):not([aria-hidden=true]) { cursor: pointer; }
+				.ytp-large-play-button { position: absolute; left: 50%; top: 50%; width: 68px; height: 48px; margin-left: -34px; margin-top: -24px; }
+		</style>
+</head>
+<!--<script src="../STATIC/js/iframe_api.js"></script>-->
+<body>
+<!-- The <iframe> (and video player) will replace this <div> tag. -->
+<div id="youtube">
+		<div id="player"></div>
+		<div class="thumbnail">
+				<img src="http://ojsfile.ohmynews.com/STD_IMG_FILE/2014/0829/IE001748429_STD.jpg" alt="">
+				<button class="ytp-large-play-button ytp-button" aria-label="고양이 멱살을 잡아보았습니다. 보기"><svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%"><path class="ytp-large-play-button-bg" d="m .66,37.62 c 0,0 .66,4.70 2.70,6.77 2.58,2.71 5.98,2.63 7.49,2.91 5.43,.52 23.10,.68 23.12,.68 .00,-1.3e-5 14.29,-0.02 23.81,-0.71 1.32,-0.15 4.22,-0.17 6.81,-2.89 2.03,-2.07 2.70,-6.77 2.70,-6.77 0,0 .67,-5.52 .67,-11.04 l 0,-5.17 c 0,-5.52 -0.67,-11.04 -0.67,-11.04 0,0 -0.66,-4.70 -2.70,-6.77 C 62.03,.86 59.13,.84 57.80,.69 48.28,0 34.00,0 34.00,0 33.97,0 19.69,0 10.18,.69 8.85,.84 5.95,.86 3.36,3.58 1.32,5.65 .66,10.35 .66,10.35 c 0,0 -0.55,4.50 -0.66,9.45 l 0,8.36 c .10,4.94 .66,9.45 .66,9.45 z" fill="#1f1f1e" fill-opacity="0.81"></path><path d="m 26.96,13.67 18.37,9.62 -18.37,9.55 -0.00,-19.17 z" fill="#fff"></path><path d="M 45.02,23.46 45.32,23.28 26.96,13.67 43.32,24.34 45.02,23.46 z" fill="#ccc"></path></svg></button>
+		</div>
+</div>
+
+<script>
+//#cc181e  #1f1f1f
+  // 꼭 들어가야 하는 부분 //
+	var player;
+	var tag = document.createElement('script');
+	tag.src = "https://www.youtube.com/iframe_api";
+
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  //////////////////////////
+
+  // 동영상 불러오기
+	function onYouTubeIframeAPIReady() {
+		var videoId = 'hNV9tIfRU1Q';  // 동영상 아이디를 넣어주세요 !!
+		player = new YT.Player( $("#player").get(0), {   // $()안에 동영상을 넣을 선택자를 넣어주세요.
+			height: '360',
+			width: '640',
+			videoId: videoId,
+			events: {
+				'onReady': onPlayerReady,
+				'onStateChange': onPlayerStateChange
+			},
+			playerVars: {             // <iframe> 태그 지정시 필요없음
+					//playlist: videoId,
+					autoplay: 0, // 자동재생
+					autohide: 0,
+					controls: 0,
+					showinfo: 0,
+					modestbranding: 1,
+		    rel: 0,
+		    loop: 0,
+		    enablejsapi: 1
+			}
+		});
+	}
+	console.log(1)
+
+	// 썸네일 이미지 사이즈 변경 (사이즈 딱 맞는 썸네일시 필요 없음)
+	$('.thumbnail img').css({width:640, height:360});
+
+	// 동영상 준비 완료시 실행되는 이벤트
+	var isPlay = false;
+	function onPlayerReady(event) {
+			// 썸네일 클릭시, 마우스
+			$('.thumbnail').on('click', function () {
+					if(isPlay){
+							$('.thumbnail').css('opacity', 1);
+							event.target.pauseVideo();
+					}
+					else {
+						  $('.thumbnail').css('opacity', 0);
+							event.target.playVideo();
+					}
+					isPlay = !isPlay;
+			}).on('mouseover', function () {
+				$('.ytp-large-play-button-bg').attr('fill', '#cc181e')
+			}).on('mouseout', function () {
+					$('.ytp-large-play-button-bg').attr('fill', '#1f1f1f')
+			})
+	}
+
+	// 상태 변경시 실행되는 이벤트
+	function onPlayerStateChange(event) {
+		var state = event.data;
+		var message;
+		switch (state) {
+				case -1: message = "시작 되지 않음"; break;
+				case YT.PlayerState.PLAYING:
+					message = "재생";
+					break;
+				case YT.PlayerState.PAUSED:
+					message = "일시중지";
+					break;
+				case YT.PlayerState.BUFFERING:
+					message = "버퍼링";
+					break;
+				case YT.PlayerState.CUED:
+					message = "신호 받는 중";
+					break;
+
+				/** !! 동영상 완료시 !! **/
+				case YT.PlayerState.ENDED:
+					message = "종료됨(끝까지 다 봄)";
+					alert('완료');
+					break;
+		}
+		console.log(message);
+	}
+
+
+	// 비디오 멈추는 함수
+	function stopVideo() {
+		player.stopVideo();
+	}
+</script>
+</body>
+</html>

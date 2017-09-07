@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="ux">
+    <serverData>
+      <paths name="ux">
+        <serverdata>
+          <mappings>
+            <mapping deploy="C:\workspace\skill\Animation\www" local="$PROJECT_DIR$/Animation/www" web="/ux_motion/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

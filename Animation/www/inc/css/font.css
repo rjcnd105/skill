@@ -1,0 +1,7 @@
+@charset 'utf-8';
+/*! Nanum Barun Gothic (Korean) http://hangeul.naver.com */
+@font-face{font-family:'Nanum Gothic';font-weight:400;font-style:normal;src:url(font/NanumGothic-Regular.eot);src:url(font/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),url(font/NanumGothic-Regular.woff2) format('woff2'),url(font/NanumGothic-Regular.woff) format('woff'),url(font/NanumGothic-Regular.ttf) format('truetype')}
+@font-face{font-family:'Nanum Gothic';font-weight:700;font-style:normal;src:url(font/NanumGothic-Bold.eot);src:url(font/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),url(font/NanumGothic-Bold.woff2) format('woff2'),url(font/NanumGothic-Bold.woff) format('woff'),url(font/NanumGothic-Bold.ttf) format('truetype')}
+/*! Samsung */
+@font-face{font-family:SamsungIFBd;font-weight:400;font-style:normal;src:url(../../fonts/SamsungIF_Bd.eot);src:url(../../fonts/SamsungIF_Bd.eot?iefix) format('embedded-opentype'),url(../../fonts/SamsungIF_Bd.woff) format('woff'),url(../../fonts/SamsungIF_Bd.ttf) format('truetype'),url(../../fonts/SamsungIF_Bd.svg#SamsungIF_Bd) format('svg')}
+@font-face{font-family:SamsungIFRg;font-weight:400;font-style:normal;src:url(../../fonts/SamsungIF_Rg.eot);src:url(../../fonts/SamsungIF_Rg.eot?iefix) format('embedded-opentype'),url(../../fonts/SamsungIF_Rg.woff) format('woff'),url(../../fonts/SamsungIF_Rg.ttf) format('truetype'),url(../../fonts/SamsungIF_Rg.svg#SamsungIF_Rg) format('svg')}

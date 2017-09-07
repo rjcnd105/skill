@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="inc/js/hammer.min.js"></script>
+	<!--script src="js/hammer.js-1.0.4/hammer.fakemultitouch.js"></script-->
+
+</head>
+
+<body >
+
+<div id="test_el" style="width: 600px; height: 300px; background-color: #FCDC4A;"></div>
+
+<textarea id="vis_log" rows="10" cols="50"></textarea>
+
+<!--
+Leaving this script at the end of the body will execute it after the DOM elements have been created.
+Alternatively, we could have used jQuery's  $(document).ready(function(){});, but I wanted to make it
+a "jQuery-free" example.
+-->
+<script type="text/javascript">
+	var gesture_element = document.getElementById('test_el');
+	var log_element = document.getElementById('vis_log');
+	function log(message) {
+		log_element.innerHTML = " > " + message + "\n" + log_element.innerHTML;
+	};
+	function eventHandler(event) {
+		if (event.type in events) events[event.type](event);
+		else throw("Help! I don't know what to do with this event.");
+	};
+	function handleTap(event) {
+		log("Tap event handler");
+	}
+	function handleDrag(event) {
+		log("Drag event handler");
+	}
+	function handlePinch(event) {
+		log("Pinch event handler");
+		log("    Length: " + pinchLength(event) + " px.");
+		log("    Angle : " + pinchAngle(event) + " deg.");
+	}
+	function pinchLength(event) {
+		return Hammer.utils.getDistance(event.gesture.touches[0], event.gesture.touches[1])
+	};
+	function pinchAngle(event) {
+		return Hammer.utils.getAngle(event.gesture.touches[0], event.gesture.touches[1])
+	};
+	events = {
+		'tap'  : handleTap,
+		'drag' : handleDrag,
+		'pinch': handlePinch
+	};
+	hammer_options = {
+		prevent_default: true,
+		no_mouseevents: true
+	};
+	var hammertime = Hammer(gesture_element, hammer_options).on(Object.keys(events).join(" "), eventHandler);
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+//- currentUrl 은 공통적인 루트의 경로를 제어합니다.
+//- 변경은 이곳에서 currentUrl 의 경로만 수정해주면 전체 적용 됩니다.
+//- 단 이미지 링크 이외의 head 영역의 css, js 링크는 따로 수정해 주기 바랍니다.
+//- less 파일은 파일내에 currenUrl 따로 선언되어 있습니다.
+- var currentUrl = '/html/';
+
+doctype html
+
+html(lang='ko', class="login_bgcolor")
+	head
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no')
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+		meta(charset="utf-8")
+		meta(name="format-detection", content="telephone=no")
+		meta(name="keywords" content="")
+		meta(name="description" content="")
+
+		- var title = '고정 타이틀 값 넣기';
+		block title
+			title #{title}
+
+		block css
+			link(href="#{currentUrl}css/font.css", type='text/css', rel='stylesheet')
+			link(href="#{currentUrl}css/reset.css", type='text/css', rel='stylesheet')
+			//- print.css 사용시 발생 될 수 있는 문제 - 지도가 연동되는 부분에서 지도 부분이 출력이 안 될 수 있음. 그럴 경우 print.css 제거하고 출력 테스트 해보기 바람.
+			link(href="#{currentUrl}css/print.css", type='text/css', rel='stylesheet')
+			link(href="#{currentUrl}css/common.css", type='text/css', rel='stylesheet')
+			link(href="#{currentUrl}css/contents.css", type='text/css', rel='stylesheet')
+			//- javascript 는 성능향상을 위하여 하단에 배치
+
+	//- body, wrap 등에 클래스 줘야 할때 사용함.
+	//- bodyClass 등의 변수는 아래 body 태그에서와 같이 사용함.
+	- var bodyClass = '';
+	- var wrapClass = '';
+
+	block vars
+
+	body(class='#{bodyClass}')
+		//- 딤드용 이미지
+		.dimm
+			img(src="#{currentUrl}images/common/blank_size_100.png", alt="")
+
+		block header
+			//- <!-- header include -->
+			//- //-include layout/header
+			//- <!-- header include -->
+
+		block contents
+
+		#footer
+			<!-- footer include -->
+			//-include layout/footer
+			<!-- footer include -->
+
+
+
+		//- 필요할 경우 세팅함.
+		block script
+			//- script(src="#{currentUrl}js/modernizr.js", type='text/javascript', charset='utf-8')
+			script(src="#{currentUrl}js/jquery.js", type='text/javascript', charset='utf-8')
+			script(src="#{currentUrl}js/common.js", type='text/javascript', charset='utf-8')

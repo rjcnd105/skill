@@ -1,0 +1,19 @@
+//- http://carv.ai/
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		title Document
+	link(href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css' rel='stylesheet')
+	link(href='./imgs.css' rel='stylesheet')
+	- var rootFolder = '../../../';
+	body
+		a(href='http://carv.ai/') 참고 : http://carv.ai/
+		.imgfilms
+			img(src='#{rootFolder}images/mountain1.jpg')
+			img(src='#{rootFolder}images/mountain2.png')
+			span MOUNTAIN
+		script(type='text/javascript', src='#{rootFolder}inc/js/jquery.js')
+		script(type='text/javascript', src='#{rootFolder}inc/js/gsap-v1_19_1/src/uncompressed/TweenMax.js')
+		script(type='text/javascript', src='#{rootFolder}inc/js/gsap-v1_19_1/src/uncompressed/plugins/ScrollToPlugin.js')
+		script(type='text/javascript', src='./imgs.js')

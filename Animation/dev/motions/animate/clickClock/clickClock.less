@@ -1,0 +1,28 @@
+.clockbox { position: relative; width: 1000px; height: 1000px; margin: 0 auto; background-color: #333; overflow: hidden;}
+.svg_center(){
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.frame { .svg_center(); width: 100%; height: 100%; }
+.clock { .svg_center(); }
+.progress { position: absolute; z-index: 1; left:5px; top: 920px; width: 1000px; text-align: center;}
+.progress span {
+  transition:all 0.3s;
+  position: absolute; display: block; width: 100%; text-align: center;
+  font-size: 18px; top: -9px; letter-spacing: 5px;
+  color: #F9BC3B;
+}
+.progress_circle { .svg_center(); }
+.progress_circle circle{
+  transform-origin: center center;
+  transform: rotate(-90deg);
+  //- 원의 둘레 : 2 * pie * r
+  stroke-dasharray: 2 * 3.14 * 45;
+  stroke-dashoffset: 2 * 3.14 * 45;
+}
+
+.hide{ opacity:0}

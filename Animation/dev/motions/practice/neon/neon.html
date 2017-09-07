@@ -1,0 +1,8 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Document</title></head><link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet"><link href="./neon.css" rel="stylesheet"><style>body { background: #444444; }
+svg { position: absolute; top: 200px; left: 200px; }
+</style><body><svg width="800px" height="200px" viewBox="-50 -50 800 200"><path fill="none" stroke="#F8A6FB" stroke-width="5" stroke-linecap="round" stroke-dasharray="183.6802,20.0378,300.5676,15.0284" d="M716.046,84.204c0,4.856-5.373,8.793-12,8.793H16.418c-6.627,0-12-3.937-12-8.793V14.024c0-4.856,5.373-8.793,12-8.793h659.251c6.627,0,7.926,2.194,12,8.793L716.046,84.204z" class="neon"></path><path fill="none" stroke="#F8A6FB" filter="url(#f1)" stroke-width="5" stroke-linecap="round" stroke-dasharray="183.6802,20.0378,300.5676,15.0284" d="M716.046,84.204c0,4.856-5.373,8.793-12,8.793H16.418c-6.627,0-12-3.937-12-8.793V14.024c0-4.856,5.373-8.793,12-8.793h659.251c6.627,0,7.926,2.194,12,8.793L716.046,84.204z" class="neon"></path></svg><svg height="200" width="800"><defs><filter id="f1" x="-50" y="-50" width="250" height="250"><feoffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feoffset><fegaussianblur result="blurOut" in="offOut" stddeviation="3"></fegaussianblur></filter></defs></svg><script type="text/javascript" src="TweenMax.min.js"></script><script type="text/javascript" src="./neon.js"></script><script>console.log(document.querySelectorAll('.neon')[0].getTotalLength());
+TweenMax.fromTo('.neon', 20, {strokeDashoffset: 0}, {
+	strokeDashoffset: document.querySelectorAll('.neon')[0].getTotalLength(),
+	repeat: -1,
+	ease: Linear.easeNone
+});</script></body></html>

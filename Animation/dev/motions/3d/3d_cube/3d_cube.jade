@@ -1,0 +1,35 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8' )
+		title Document
+	link(href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css' rel='stylesheet')
+	link(href='3d_cube.css' rel='stylesheet')
+	link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+	body
+		section.cubebox
+			.cube
+				.front Front
+				.back
+					h2 Make by Hoejun :D
+				.right Right
+				.left Left
+				.top
+					.popup
+						h3 머리를 보고 싶으세요 ???
+						button 예
+				.bottom
+					.bottombox
+						.minicube
+							.cube
+								.front
+								.back
+								.right
+								.left
+								.top
+								.bottom
+
+
+		script(type='text/javascript', src='../../../inc/js/jquery.js')
+		script(type='text/javascript', src='../../../inc/js/gsap-v1_19_1/src/uncompressed/TweenMax.js')
+		script(type='text/javascript', src='./3d_cube.js')

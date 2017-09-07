@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		*{ margin: 0; padding: 0;}
+
+		.board :not(text) {
+			fill:none;
+			stroke: black;
+		}
+		.grid {
+			shape-rendering: crispEdges;
+			opacity:0.1;
+			stroke-width:1;
+			stroke: black;
+		}
+		.grid:hover {
+			stroke: red
+		}
+	</style>
+	<script src="js/d3.js"></script>
+	<script src="js/jquery-1.12.2.min.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="chart"></div>
+	</div>
+	<script>
+		(function (names) {
+				for(var i = 0; i < names.length; i++){
+						(function (name) {
+							  d3.select().constructor.prototype[name + "s"] = function (obj) {
+								  var key;
+								  for(key in obj){
+									  if(!obj.hasOwnProperty(key)) { continue; }
+									  this[name](key, obj[key]);
+								  }
+								  return this;
+							  };
+			      })(names[i])
+				}
+	  })(["attr", "style"]);
+
+  var width, height, m = {t: 50, r: 50, b: 50, l: 50};
+  width = 1200;
+  height = 800;
+  var svg = d3.select(".wrap")
+		  .append("svg")
+		  .attr("width", width)
+		  .attr("height", height);
+
+
+  var board = svg.append("g")
+		  .attr("transform", "translate(" + m.l + "," + m.t + ")")
+			.attr("class", "board");
+
+
+  board.selectAll("line.grid.x").data(stepArr(10, function(n){return n <= width - m.l - m.r}))
+		  .enter()
+		  .append("line")
+		  .attr("class", "grid x")
+		  .attr("y1", 0)
+		  .attr("y2", height - m.b - m.t)
+		  .attr("x1", function(d){return d})
+		  .attr("x2", function(d){return d})
+		  .style("opacity", function(d, i, el){
+		    var strongGide = d % 50 === 0;
+		  	return strongGide ? 0.3 : 0.1
+		  })
+		  .datum(function(d, i, el){
+			  var strongGide = d % 50 === 0;
+			  if(strongGide) { board.append("text").html(d).attr("x", d).attr("y", -10).style("text-anchor", "middle").attr("stroke", null) }
+//		  	console.log(this, arguments); return d;
+		  });
+
+  board.selectAll("line.grid.y").data(stepArr(10, function(n){return n <= height - m.t - m.b}))
+		  .enter()
+		  .append("line")
+		  .attr("class", "grid y")
+		  .attr("x1", 0)
+		  .attr("x2", width - m.l - m.r)
+		  .attr("y1", function(d){return d})
+		  .attr("y2", function(d){return d})
+		  .style("opacity", function(d){ return d % 50 === 0 ? 0.3 : 0.1})
+		  .datum(function(d, i, el){
+			  var strongGide = d % 50 === 0;
+			  if(strongGide) { board.append("text").html(d).attr("y", d + 5).attr("x", -10).style("text-anchor", "end").attr("stroke", null) }
+//			  console.log(this, arguments); return d;
+		  });
+
+	board.selectAll("circle").data(pairs2([150, 200, 250, 300, 350], [150, 200, 250, 300, 350])).enter()
+			.append("circle")
+			.attrs({cx:function(d){return d[0]}, cy:function(d){return d[1]}, r:50});
+
+	board.selectAll("rect").data(pairs2([450, 550, 650], [450, 500, 550, 600])).enter()
+			.append("rect")
+			.attrs({x:function(d){return d[0]}, y:function(d){return d[1]}, width:75, height:75});
+
+	board.selectAll().data([[650, 350]]).enter()
+			.append("circle")
+			.attrs({cx:function(d){return d[0]}, cy:function(d){return d[1]}, r:5})
+			.styles({fill:"red", stroke:"none"})
+			.on("mousedown", function(d, i, el){
+				d3.select(this).attr("data-clicked", true);
+				console.log(d3.mouse(board.node()))
+			});
+
+
+	function stepArr(start, step, pred){
+		var arr = [];
+		var num;
+    if(arguments.length === 2){ pred = step; step = start; start = 0; }
+		arr.push(start);
+		num = start;
+		while(true){
+      if(pred(num += step)){
+        arr.push(num);
+		  } else { break; }
+	  }
+	  return arr;
+  }
+	function pairs2(arr1, arr2) {
+		var nArr = [];
+		for(var i = 0, len1 = arr1.length; i < len1; i++){
+			for(var j = 0, len2 = arr2.length; j < len2; j++){
+				nArr.push([].concat(arr1[i], arr2[j]));
+			}
+		}
+		return nArr;
+	}
+
+
+	</script>
+</body>
+</html>
