@@ -1,0 +1,16 @@
+@charset 'utf-8';
+/*! reset */
+html{font-size:100%;color:#000;background:#fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+article,aside,audio,blockquote,body,canvas,code,dd,details,div,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,input,legend,li,mark,menu,nav,ol,p,pre,section,summary,td,textarea,th,time,ul,video{margin:0;padding:0}
+body{font-family:Dotum,'돋움',Gulim,'굴림','Helvetica Neue',Helvetica,Arial,Verdana,Tahoma,sans-serif;font-size:12px;line-height:1;color:#000;background-color:#fff}
+img{vertical-align:middle;border:0}
+button,input,select,textarea{font-size:100%;margin:0;vertical-align:middle}
+table{border-spacing:0;border-collapse:collapse}
+fieldset{border:0}
+legend{color:#000}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:400;font-style:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400;line-height:1}
+caption,hr,legend{font-size:1px;line-height:0;width:0;height:0;text-indent:-9999em}
+a,a:active,a:focus,a:hover,a:link,a:visited{font-size:100%;text-decoration:none;color:#000}

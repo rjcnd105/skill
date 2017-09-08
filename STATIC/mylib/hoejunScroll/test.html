@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		html, body { height:5000px }
+		#box1 { background-color:red; width:100px; height:100px; top:2000px; position:absolute; }
+		#box2 { background-color:blue; width:100px; height:100px; top:2200px; left:100px; position:absolute; }
+		#box3 { background-color:green; width:100px; height:100px; top:2400px; position:absolute; }
+		#box4 { background-color:red; width:50px; height:50px; top:3000px; position:absolute; }
+		#box5 { background-color:blue; width:50px; height:50px; top:3000px; left:100px; position:absolute; }
+		#box6 { background-color:green; width:50px; height:50px; top:3000px; left:200px; position:absolute; }
+	</style>
+	<!--<script-->
+	<!--src="https://code.jquery.com/jquery-3.2.1.slim.min.js"-->
+	<!--integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="-->
+	<!--crossorigin="anonymous"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js" type="text/javascript"></script>
+	<!--<script src="./TweenMax.js" type="text/javascript"></script>-->
+	<script src="./hoejunScroll.js" type="text/javascript"></script>
+	<script>
+		var $ = function (sel) {
+			return document.querySelectorAll(sel);
+		};
+		var hj = new HjScroll();
+		var hj2 = new HjScroll();
+		//	  HjScroll.unWatching(hj);
+		//		hj.addTws([0.5, 1], '.d', el => TweenMax.to(el, 1, {x:1000}));
+		hj.addTw([.05, 1], function (ins) {
+			return TweenMax.to('#box2', 2, {
+				backgroundColor: 'white',
+				ease: Linear.easeOut,
+				rotation: 720
+			})
+		});
+		hj2.addTws([.5, .9], '.d', function (el, i) { return TweenMax.to(el, 2, {x: 500}); })
+		hj.addTw(.5, function () {
+			return TweenMax.to('#box3', 2, {
+				rotationY: 360,
+				backgroundColor: 'pink',
+				ease: Back.easeOut
+			});
+		} /*{reverse:false}*/)
+		hj.addTw([0.2, 1], function () { return TweenMax.to('body', 2, {backgroundColor: 'black'}) }, {fixed: true})
+
+			hj.addTw(.4, function () {
+					return TweenMax.staggerTo('.d2', 1, {
+							y:300
+					}, .4)
+			})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="box1" class="d">1</div>
+	<div id="box2" class="d">2</div>
+	<div id="box3" class="d">3</div>
+
+		<div id="box4" class="d2"></div>
+		<div id="box5" class="d2"></div>
+		<div id="box6" class="d2"></div>
+</div>
+</body>
+</html>
