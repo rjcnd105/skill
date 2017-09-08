@@ -2,17 +2,19 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/hoe_material.js" />
         <item url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoejunScroll/hoejunScroll.js" />
-        <item url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_material.js" />
-        <item url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoejunScroll.js" />
+        <item url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/hoe_position.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_material.js" />
       <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoejunScroll.js" />
-      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoejunScroll/hoejunScroll.js" />
       <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_material.js" />
       <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoejunScroll.js" />
+      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/hoe_material.js" />
+      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoejunScroll/hoejunScroll.js" />
+      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/hoe_position.js" />
     </CLASSES>
     <SOURCES />
   </library>
