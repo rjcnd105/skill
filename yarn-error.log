@@ -1,0 +1,58 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.0.1/libexec/bin/yarn.js install
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.0.1
+
+Node version: 
+  8.4.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "skill",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+      "babel-plugin-transform-runtime": "^6.23.0",
+      "babel-runtime": "^6.26.0"
+    },
+    "devDependencies": {
+      "babel-preset-es2015": "^6.24.1",
+      "babel-preset-stage-2": "^6.24.1",
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/rjcnd105/skill.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/rjcnd105/skill/issues"
+    },
+    "homepage": "https://github.com/rjcnd105/skill#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/kimhoejun/Documents/works/skill/package.json: Unexpected token } in JSON at position 293
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.0.1/libexec/lib/cli.js:797:57
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.0.1/libexec/lib/cli.js:92:30)
+      at /usr/local/Cellar/yarn/1.0.1/libexec/lib/cli.js:103:13
+      at <anonymous>

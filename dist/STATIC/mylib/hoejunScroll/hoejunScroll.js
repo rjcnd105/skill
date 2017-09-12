@@ -288,7 +288,7 @@ window.HjScroll = function (TimelineMax) {
 		}
 
 		// if: ins 넘어올시 해당 ins 처리
-		// else: 넘어오지 않을 시 watching 중인 instance들 처리
+		// else: 넘어오지 않을 시 watching 중인 instance들 처리	 
 		if (ins && ins instanceof HjScroll) {
 			reCalc(ins.tl);
 		} else {
