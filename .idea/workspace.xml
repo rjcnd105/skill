@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="174ab828-7d0a-48e7-b58d-ca5498bc51d6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/STATIC/mylib/stratumLayout/stratumLayout.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/STATIC/mylib/hoe_material/hoe_material.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/STATIC/mylib/hoe_position/hoe_position.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/STATIC/mylib/hoe_position/s.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/hoe_material.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/hoe_material.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/hoe_position.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/hoe_position.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/STATIC/mylib/hoejunScroll/hoejunScroll.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/STATIC/mylib/hoejunScroll/hoejunScroll.js.map" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/STATIC/mylib/hoe_position/1.jpg" afterPath="$PROJECT_DIR$/STATIC/mylib/stratumLayout/1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/STATIC/mylib/hoe_position/2.jpg" afterPath="$PROJECT_DIR$/STATIC/mylib/stratumLayout/2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/STATIC/mylib/hoe_position/3.jpg" afterPath="$PROJECT_DIR$/STATIC/mylib/stratumLayout/3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/STATIC/mylib/hoe_position/4.jpg" afterPath="$PROJECT_DIR$/STATIC/mylib/stratumLayout/4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/STATIC/mylib/hoe_position/5.jpg" afterPath="$PROJECT_DIR$/STATIC/mylib/stratumLayout/5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/STATIC/mylib/hoe_position/swiper.min.css" afterPath="$PROJECT_DIR$/STATIC/mylib/stratumLayout/swiper.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/STATIC/mylib/hoe_position/test.html" afterPath="$PROJECT_DIR$/STATIC/mylib/stratumLayout/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.babelrc" afterPath="$PROJECT_DIR$/.babelrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Animation/dev/motions/practice/drawSVG/lmoa.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Animation/dev/motions/practice/drawSVG/motif_1400.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Animation/dev/motions/practice/drawSVG/motif_1920.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/STATIC/mylib/hoejunScroll/hoejunScroll.js" afterPath="$PROJECT_DIR$/STATIC/mylib/hoejunScroll/hoejunScroll.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,14 +25,66 @@
     <favorites_list name="skill" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43447462">
+    <splitter split-orientation="horizontal" split-proportion="0.485625">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="hoejunScroll.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="hoejunScroll.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/STATIC/mylib/hoejunScroll/hoejunScroll.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="235">
-                  <caret line="289" column="53" lean-forward="false" selection-start-line="289" selection-start-column="53" selection-end-line="289" selection-end-column="53" />
+                <state relative-caret-position="-594">
+                  <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="lmoa.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Animation/dev/motions/practice/drawSVG/lmoa.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="558">
+                  <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="30" selection-end-column="107" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="motif_1400_svg.svg" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Animation/dev/motions/practice/drawSVG/motif_1400_svg.svg">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="36">
+                  <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="motif_1400_svg_goto.svg" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Animation/dev/motions/practice/drawSVG/motif_1400_svg_goto.svg">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="drawSVG.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Animation/dev/motions/practice/drawSVG/drawSVG.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="108">
+                  <caret line="87" column="13" lean-forward="false" selection-start-line="87" selection-start-column="13" selection-end-line="88" selection-end-column="72" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="motif_1400.svg" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Animation/dev/motions/practice/drawSVG/motif_1400.svg">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="54">
+                  <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="14" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -105,7 +137,7 @@
           <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/STATIC/mylib/stratumLayout/test.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="808">
+                <state relative-caret-position="1206">
                   <caret line="67" column="52" lean-forward="false" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
                   <folding />
                 </state>
@@ -132,8 +164,8 @@
         <option value="Less File" />
         <option value="Jade File" />
         <option value="Pug File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -177,8 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Animation/www/files.json" />
-        <option value="$PROJECT_DIR$/Animation/www/index.html" />
         <option value="$PROJECT_DIR$/Animation/dev/index.jade" />
         <option value="$PROJECT_DIR$/Animation/www/motions/3d/3d_cube/browser" />
         <option value="$PROJECT_DIR$/Animation/files.js" />
@@ -228,6 +258,8 @@
         <option value="$PROJECT_DIR$/STATIC/mylib/stratumLayout/test.html" />
         <option value="$PROJECT_DIR$/STATIC/mylib/stratumLayout/stratumLayout.js" />
         <option value="$PROJECT_DIR$/STATIC/mylib/hoejunScroll/hoejunScroll.js" />
+        <option value="$PROJECT_DIR$/Animation/dev/motions/practice/drawSVG/motif_1400.svg" />
+        <option value="$PROJECT_DIR$/Animation/dev/motions/practice/drawSVG/lmoa.html" />
       </list>
     </option>
   </component>
@@ -250,11 +282,9 @@
   <component name="NamedScopeManager">
     <scope name="mylib" pattern="file[skill]:STATIC/mylib//*" />
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
+    <option name="x" value="808" />
+    <option name="y" value="235" />
     <option name="width" value="1280" />
     <option name="height" value="1052" />
   </component>
@@ -316,6 +346,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -327,68 +358,42 @@
             <path>
               <item name="skill" type="b2602c69:ProjectViewProjectNode" />
               <item name="skill" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="Animation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skill" type="b2602c69:ProjectViewProjectNode" />
               <item name="skill" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="STATIC" type="462c0819:PsiDirectoryNode" />
+              <item name="Animation" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skill" type="b2602c69:ProjectViewProjectNode" />
               <item name="skill" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="STATIC" type="462c0819:PsiDirectoryNode" />
-              <item name="mylib" type="462c0819:PsiDirectoryNode" />
+              <item name="Animation" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+              <item name="motions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skill" type="b2602c69:ProjectViewProjectNode" />
               <item name="skill" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="STATIC" type="462c0819:PsiDirectoryNode" />
-              <item name="mylib" type="462c0819:PsiDirectoryNode" />
-              <item name="stratumLayout" type="462c0819:PsiDirectoryNode" />
+              <item name="Animation" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+              <item name="motions" type="462c0819:PsiDirectoryNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skill" type="b2602c69:ProjectViewProjectNode" />
               <item name="skill" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="STATIC" type="462c0819:PsiDirectoryNode" />
-              <item name="mylib" type="462c0819:PsiDirectoryNode" />
-              <item name="stratumLayout" type="462c0819:PsiDirectoryNode" />
-              <item name="stratumLayout.js" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="skill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="skill" type="462c0819:PsiDirectoryNode" />
-              <item name="STATIC" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="skill" type="462c0819:PsiDirectoryNode" />
-              <item name="STATIC" type="462c0819:PsiDirectoryNode" />
-              <item name="mylib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="skill" type="462c0819:PsiDirectoryNode" />
-              <item name="STATIC" type="462c0819:PsiDirectoryNode" />
-              <item name="mylib" type="462c0819:PsiDirectoryNode" />
-              <item name="hoejunScroll" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="skill" type="462c0819:PsiDirectoryNode" />
-              <item name="STATIC" type="462c0819:PsiDirectoryNode" />
-              <item name="mylib" type="462c0819:PsiDirectoryNode" />
-              <item name="stratumLayout" type="462c0819:PsiDirectoryNode" />
+              <item name="Animation" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+              <item name="motions" type="462c0819:PsiDirectoryNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
+              <item name="drawSVG" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -414,19 +419,19 @@
     <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\works\skill\Animation\dev\motions\practice\drawSVG" />
+      <recent name="$PROJECT_DIR$/STATIC/mylib/stratumLayout" />
+      <recent name="C:\workspace\skill\STATIC\mylib\hoe_position" />
+      <recent name="C:\workspace\skill\STATIC\mylib" />
+      <recent name="C:\workspace\skill\Animation\dev\motions\practice\swiperWithTether" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\workspace\skill\Animation\dev\motions\practice" />
       <recent name="C:\workspace\skill\STATIC\js" />
       <recent name="C:\workspace\skill\STATIC\mylib\hoe_material" />
       <recent name="C:\workspace\skill\STATIC\mylib\hoejunScroll" />
       <recent name="C:\workspace\skill\STATIC\mylib" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/STATIC/mylib/stratumLayout" />
-      <recent name="C:\workspace\skill\STATIC\mylib\hoe_position" />
-      <recent name="C:\workspace\skill\STATIC\mylib" />
-      <recent name="C:\workspace\skill\Animation\dev\motions\practice\swiperWithTether" />
-      <recent name="C:\workspace\skill\Animation\dev\motions\practice" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -578,11 +583,12 @@
       <workItem from="1505124217967" duration="856000" />
       <workItem from="1505125144572" duration="171000" />
       <workItem from="1505180071954" duration="12013000" />
+      <workItem from="1508204291804" duration="9200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="334488000" />
+    <option name="totallyTimeSpent" value="343688000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -594,29 +600,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09166667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11770833" sideWeight="0.4877551" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14712153" sideWeight="0.4877551" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26666668" sideWeight="0.50208336" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27522936" sideWeight="0.49791667" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.228125" sideWeight="0.5122449" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="100" y="123" width="1720" height="853" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="123" width="1720" height="853" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20700637" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
@@ -661,28 +667,6 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Animation/www/inc/css/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Animation/dev/motions/practice/onePageScroll/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/STATIC/js/gsap-v1.20.2/minified/utils/Draggable.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Animation/dev/motions/practice/onePageScroll/index.html" />
     <entry file="file://$PROJECT_DIR$/Animation/dev/motions/practice/onePageScroll/onePageScroll.jade.pug" />
     <entry file="file://$PROJECT_DIR$/Animation/dev/motions/material/videoOpenButton/browser">
       <provider selected="true" editor-type-id="text-editor">
@@ -775,13 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Animation/dev/motions/practice/drawSVG/drawSVG.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Animation/www/motions/practice/onePageScroll/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -803,13 +780,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/STATIC/mylib/hoe_position/swiper.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/STATIC/mylib/hoe_position/swiper.min.css" />
     <entry file="file://$PROJECT_DIR$/STATIC/mylib/hoejunScroll/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -818,21 +789,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/STATIC/mylib/hoejunScroll/hoejunScroll.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Animation/dev/motions/practice/swiperWithTether/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="883">
           <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -840,7 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -848,7 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -856,7 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -864,18 +830,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/STATIC/mylib/hoe_position/a.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/STATIC/mylib/hoe_position/a.js" />
     <entry file="file://$PROJECT_DIR$/dist/STATIC/mylib/hoejunScroll/hoejunScroll.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3708">
@@ -884,22 +842,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/hoe_material.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/STATIC/mylib/hoe_position/s.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="41" lean-forward="false" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/hoe_material.js" />
+    <entry file="file://$PROJECT_DIR$/STATIC/mylib/hoe_position/s.html" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -916,38 +860,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/STATIC/mylib/hoe_position/2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/STATIC/mylib/hoe_position/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/STATIC/mylib/hoe_position/hoe_position.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/hoe_position.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/STATIC/mylib/hoe_position/2.jpg" />
+    <entry file="file://$PROJECT_DIR$/STATIC/mylib/hoe_position/test.html" />
+    <entry file="file://$PROJECT_DIR$/STATIC/mylib/hoe_position/hoe_position.js" />
+    <entry file="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/hoe_position.js" />
     <entry file="file://$PROJECT_DIR$/STATIC/mylib/stratumLayout/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
+        <state relative-caret-position="1206">
           <caret line="67" column="52" lean-forward="false" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
           <folding />
         </state>
@@ -977,10 +896,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Animation/dev/motions/practice/drawSVG/motif_1400.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/STATIC/mylib/hoejunScroll/hoejunScroll.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="289" column="53" lean-forward="false" selection-start-line="289" selection-start-column="53" selection-end-line="289" selection-end-column="53" />
+        <state relative-caret-position="-594">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Animation/dev/motions/practice/drawSVG/motif_1400_svg_goto.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Animation/dev/motions/practice/drawSVG/drawSVG.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="87" column="13" lean-forward="false" selection-start-line="87" selection-start-column="13" selection-end-line="88" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Animation/dev/motions/practice/drawSVG/motif_1400_svg.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Animation/dev/motions/practice/drawSVG/lmoa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="30" selection-end-column="107" />
           <folding />
         </state>
       </provider>
