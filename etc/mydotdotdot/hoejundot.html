@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+<style>
+		.block-with-text {
+				padding: 10px 0 0 0;
+				display: block;
+				display: -webkit-box;
+				height: 65px;
+				width: 200px;
+				margin: 0 0 15px 0;
+				font-size: 14px;
+				line-height: 1.4em;
+				max-height: 5.6em; /* max: 4 lines */
+		}
+
+</style>
+</head>
+<body>
+		<div class="block-with-text">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi uts aliquip ex ea commodo consequat sum dolor sit 123
+		</div>
+		<div class="block-with-text">
+				Panchatantra stories are the oldest surviving fables from Ancient India. These colourful stories from the Panchatantra have spread all over the world for centuries, especially as bedtime stories for kids. We present here, a list of our versions of 60 such popular short stories from the Panchatantra, in English. Although dividing the Panchatantra into individual stories takes off the essence of its nested interludes, the following short stories include pictures and moral messages, especially for kids.
+		</div>
+
+  <script src="hoejun_dots.js"></script>
+	<script >
+			dots.add('.block-with-text');
+			console.log(document.querySelectorAll(".block-with-text"))
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+		<link rel="stylesheet" href="dist/plyr.css">
+		<script src="dist/plyr.js"></script>
+</head>
+<body>
+
+<div class='ss' data-type="youtube" data-video-id="hNV9tIfRU1Q"></div>
+<div class='ss2' data-type="youtube" data-video-id="HwDID9g6U_s"></div>
+
+<script >
+		var player;
+		player = plyr.setup(document.querySelector('.ss'), {
+				controls: ['play-large']
+		});
+		console.log(player);
+</script>
+</body>
+</html>
