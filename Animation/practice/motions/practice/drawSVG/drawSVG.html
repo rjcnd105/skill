@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+		<script src="TweenMax.min.js"></script>
+		<script src="DrawSVGPlugin.min.js"></script>
+		<style>
+				.box { position:relative;}
+				#Layer_1 { position:absolute; left:0; top:0;}
+				.box .img_box{ position:absolute; width:100%; height:100%; top:0; left:0;}
+				.img_mask{ position:absolute; width:100%; height:100%; left:-50px; overflow:hidden;}
+				.line{ position:absolute; z-index:1;}
+				.gra{ position:absolute; z-index:0;}
+		</style>
+</head>
+<body>
+
+	<div class="box">
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 width="1216px" height="841px" viewBox="0 0 1216 841" enable-background="new 0 0 1216 841" xml:space="preserve">
+				<circle class="c1" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" cx="631.835" cy="460.056" r="48.902"/>
+				<circle class="c2" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" cx="631.835" cy="460.056" r="48.902"/>
+				<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="677.531,477.455 718.564,410.527
+					1412.668,1454.809 "/>
+				<path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M410.997-790.542V372.686
+					c0,0-1.667,32.787,34.316,37.788h70.713v-96.277l57.375,52.516l58.905-53.07v97.569"/>
+		</svg>
+		<!--<svg version="1.1" id="Layer_1" class='s1' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+			 <!--width="1216px" height="841px" viewBox="0 0 1216 841" enable-background="new 0 0 1216 841" xml:space="preserve">-->
+				<!--<circle class="c1" fill="none" stroke="#ffaaaa" stroke-width="2" stroke-miterlimit="10" cx="631.835" cy="460.056" r="48.902"/>-->
+				<!--<circle class="c2" fill="none" stroke="#ffaaaa" stroke-width="2" stroke-miterlimit="10" cx="631.835" cy="460.056" r="48.902"/>-->
+				<!--<polyline fill="none" stroke="#ffaaaa" stroke-width="2" stroke-miterlimit="10" points="677.531,477.455 718.564,410.527-->
+					<!--1412.668,1454.809 "/>-->
+				<!--<path fill="none" stroke="#ffaaaa" stroke-width="2" stroke-miterlimit="10" d="M410.997-790.542V372.686-->
+					<!--c0,0-1.667,32.787,34.316,37.788h70.713v-96.277l57.375,52.516l58.905-53.07v97.569"/>-->
+		<!--</svg>-->
+		<!--<svg version="1.1" id="Layer_1" class='s2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+			 <!--width="1216px" height="841px" viewBox="2 0 1216 841" enable-background="new 0 0 1216 841" xml:space="preserve">-->
+				<!--<circle class="c1" fill="none" stroke="#ff8888" stroke-width="2" stroke-miterlimit="10" cx="631.835" cy="460.056" r="48.902"/>-->
+				<!--<circle class="c2" fill="none" stroke="#ff8888" stroke-width="2" stroke-miterlimit="10" cx="631.835" cy="460.056" r="48.902"/>-->
+				<!--<polyline fill="none" stroke="#ff8888" stroke-width="2" stroke-miterlimit="10" points="677.531,477.455 718.564,410.527-->
+					<!--1412.668,1454.809 "/>-->
+				<!--<path fill="none" stroke="#ff8888" stroke-width="2" stroke-miterlimit="10" d="M410.997-790.542V372.686-->
+					<!--c0,0-1.667,32.787,34.316,37.788h70.713v-96.277l57.375,52.516l58.905-53.07v97.569"/>-->
+		<!--</svg>-->
+		<!--<svg version="1.1" id="Layer_1" class='s3' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+			 <!--width="1216px" height="841px" viewBox="4 0 1216 841" enable-background="new 0 0 1216 841" xml:space="preserve">-->
+				<!--<circle class="c1" fill="none" stroke="#ff5555" stroke-width="2" stroke-miterlimit="10" cx="631.835" cy="460.056" r="48.902"/>-->
+				<!--<circle class="c2" fill="none" stroke="#ff5555" stroke-width="2" stroke-miterlimit="10" cx="631.835" cy="460.056" r="48.902"/>-->
+				<!--<polyline fill="none" stroke="#ff5555" stroke-width="2" stroke-miterlimit="10" points="677.531,477.455 718.564,410.527-->
+					<!--1412.668,1454.809 "/>-->
+				<!--<path fill="none" stroke="#ff5555" stroke-width="2" stroke-miterlimit="10" d="M410.997-790.542V372.686-->
+					<!--c0,0-1.667,32.787,34.316,37.788h70.713v-96.277l57.375,52.516l58.905-53.07v97.569"/>-->
+		</svg>
+	</div>
+
+	<div class="block" style="height:800px"></div>
+
+		<svg style="background-color: black;" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1216px" height="841px" viewBox="0 0 1216 841" enable-background="new 0 0 1216 841" xml:space="preserve">
+		<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="631.834" cy="460.056" r="48.902"/>
+		<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="677.531,477.455 718.564,410.527
+			1412.668,1454.809 "/>
+		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M410.998-790.542V372.686
+			c0,0-1.667,32.787,34.316,37.788h70.713v-96.277l57.375,52.516l58.905-53.071v97.57"/>
+		</svg>
+
+		<svg style="background-color: black;" version="1.1" id="Layer_2" class="type2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1216px" height="841px" viewBox="0 0 1216 841" enable-background="new 0 0 1216 841" xml:space="preserve">
+		<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="631.834" cy="460.056" r="48.902"/>
+		<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="677.531,477.455 718.564,410.527
+			1412.668,1454.809 "/>
+		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M410.998-790.542V372.686
+			c0,0-1.667,32.787,34.316,37.788h70.713v-96.277l57.375,52.516l58.905-53.071v97.57"/>
+		</svg>
+
+		<svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 width="1216px" height="841px" viewBox="0 0 1216 841" enable-background="new 0 0 1216 841" xml:space="preserve">
+		<circle fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" cx="580.432" cy="507.595" r="58.667"/>
+		<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="635.253,528.469 684.479,448.178
+			1517.17,1700.964 "/>
+		<path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M315.502-992.702V402.781
+			c0,0-1.999,39.333,41.168,45.333h84.832v-115.5l68.831,63.001L581,331.948V449"/>
+		</svg>
+
+
+		<script >
+			TweenMax.set('circle', {transformOrigin:'50% 50%', rotation:270});
+
+			TweenMax.fromTo('.type2 path', 4, {attr:{'stroke-dasharray':'40'}}, {yoyo:true, repeat: -1, attr:{'stroke-dasharray':'1'}});
+			TweenMax.fromTo('.type2 circle', 4, {attr:{'stroke-dasharray':'100'}}, {yoyo:true, repeat: -1, attr:{'stroke-dasharray':'1'}});
+			TweenMax.fromTo('.type2 polyline', 4, {attr:{'stroke-dasharray':'50'}}, {yoyo:true, repeat: -1, attr:{'stroke-dasharray':'1'}});
+			var tl = new TimelineMax({yoyo:true, repeat:-1})
+					.fromTo('#Layer_1 > path', 2, {drawSVG:0}, {drawSVG:'100%', ease:Power2.easeInOut})
+					.fromTo('#Layer_1 > .c1', .6, {drawSVG:'100% 100%'}, {drawSVG:'30% 100%', ease:Power2.easeInOut}, '-=.25')
+					.fromTo('#Layer_1 > .c2', .6, {drawSVG:'0% 0%'}, {drawSVG:'0% 30%' , ease:Power2.easeInOut}, '-=.6')
+					.fromTo('#Layer_1 > polyline', 1.6, {drawSVG:0}, {drawSVG:570, ease:Power2.easeInOut}, '-=.25');
+
+			TweenMax.fromTo('#Layer_3 path', 4, {attr:{'stroke-dasharray':'40'}}, {yoyo:true, repeat: -1, attr:{'stroke-dasharray':'1'}});
+			TweenMax.fromTo('#Layer_3 circle', 4, {attr:{'stroke-dasharray':'100'}}, {yoyo:true, repeat: -1, attr:{'stroke-dasharray':'1'}});
+			TweenMax.fromTo('#Layer_3 polyline', 4, {attr:{'stroke-dasharray':'50'}}, {yoyo:true, repeat: -1, attr:{'stroke-dasharray':'1'}});
+
+			var t2 = new TimelineMax({yoyo:true, repeat:-1})
+					.fromTo('#Layer_4 path', 2, {drawSVG:'40% 60%'}, {drawSVG:'100% 100%', ease:Power2.easeInOut})
+					.fromTo('#Layer_4 circle', .15, {opacity:0}, {opacity:1}, '-=.1')
+					.fromTo('#Layer_4 circle', .7, {drawSVG:'100% 80%'}, {drawSVG:'0% 0%'}, '-=.1')
+					.fromTo('#Layer_4 polyline', .15, {opacity:0}, {opacity:1}, '-=.1')
+					.fromTo('#Layer_4 polyline', 1, {drawSVG:'0% 5%'}, {drawSVG:'30% 40%'}, '-=.1');
+		</script>
+</body>
+</html>

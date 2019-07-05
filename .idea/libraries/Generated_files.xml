@@ -2,29 +2,23 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/dist/STATIC/mylib/stratumLayout/stratumLayout.js" />
-        <item url="file://$PROJECT_DIR$/dist/STATIC/mylib/stratumLayout/floatLayer.js" />
-        <item url="file://$PROJECT_DIR$/dist/STATIC/mylib/polyfill.js" />
         <item url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoejunScroll/hoejunScroll.js" />
+        <item url="file://$PROJECT_DIR$/dist/STATIC/mylib/polyfill.js" />
+        <item url="file://$PROJECT_DIR$/dist/STATIC/mylib/stratumLayout/floatLayer.js" />
+        <item url="file://$PROJECT_DIR$/dist/STATIC/mylib/stratumLayout/stratumLayout.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_material.js" />
-      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoejunScroll.js" />
-      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_material.js" />
-      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoejunScroll.js" />
       <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/a.js" />
-      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/a.js" />
-      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/hoe_position.js" />
-      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/stratumLayout/hoe_material.js" />
       <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/hoe_material.js" />
       <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/hoe_position.js" />
-      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/stratumLayout/hoe_material.js" />
-      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoe_position/hoe_material.js" />
-      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/stratumLayout/stratumLayout.js" />
-      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/stratumLayout/floatLayer.js" />
-      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/polyfill.js" />
+      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoejunScroll.js" />
       <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/hoejunScroll/hoejunScroll.js" />
+      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/polyfill.js" />
+      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/stratumLayout/floatLayer.js" />
+      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/stratumLayout/hoe_material.js" />
+      <root url="file://$PROJECT_DIR$/dist/STATIC/mylib/stratumLayout/stratumLayout.js" />
     </CLASSES>
     <SOURCES />
   </library>

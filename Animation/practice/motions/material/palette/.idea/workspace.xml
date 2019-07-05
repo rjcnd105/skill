@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f902b953-35d5-47de-b959-a27bcff7296a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../../.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/browser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/palette.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/palette.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/palette.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/libraries/Generated_files.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/libraries/Generated_files.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dev/motions/material/palette/palette.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dev/motions/material/palette/palette.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dev/motions/material/palette/palette.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dev/motions/material/palette/palette.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dev/motions/material/palette/palette.jade" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dev/motions/material/palette/palette.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dev/motions/material/palette/palette.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dev/motions/material/palette/palette.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/codinglist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/files.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/images/common/blank_size_100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/images/common/edit.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/images/common/end.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/images/common/ing.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/images/common/line.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/images/mountain1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/images/mountain2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/images/mountain2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/images/mountain3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/images/mountain3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/css/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/css/font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/css/print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/img/android.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/img/chrome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/img/edge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/img/firefox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/img/ie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/img/ios.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/img/nomobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/img/nopc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/img/safari.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/d3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/d3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/docs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/getting_started.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/AttrPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/BezierPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/CSSPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/CSSRulePlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/ColorPropsPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/CustomBounce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/CustomEase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/CustomWiggle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/DirectionalRotationPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/Draggable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/DrawSVGPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/EasePack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/EaselPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/EndArrayPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/ModifiersPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/MorphSVGPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/Physics2DPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/PhysicsPropsPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/RaphaelPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/RoundPropsPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/ScrambleTextPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/ScrollToPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/SplitText.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/TextPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/ThrowPropsPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/TimelineLite.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/TimelineMax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/TweenLite.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/TweenMax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/commonjs-flat/jquery.gsap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/TimelineLite.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/TimelineMax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/TweenLite.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/TweenMax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/easing/CustomBounce.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/easing/CustomEase.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/easing/CustomWiggle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/easing/EasePack.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/jquery.gsap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/AttrPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/BezierPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/CSSPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/CSSRulePlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/ColorPropsPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/DirectionalRotationPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/DrawSVGPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/EaselPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/EndArrayPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/ModifiersPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/MorphSVGPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/Physics2DPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/PhysicsPropsPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/RaphaelPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/RoundPropsPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/ScrambleTextPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/ScrollToPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/TextPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/plugins/ThrowPropsPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/utils/CSSTransform.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/utils/Draggable.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/minified/utils/SplitText.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/TimelineLite.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/TimelineMax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/TweenLite.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/TweenMax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/easing/CustomBounce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/easing/CustomEase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/easing/CustomWiggle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/easing/EasePack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/jquery.gsap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/AttrPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/BezierPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/CSSPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/CSSRulePlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/ColorPropsPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/DirectionalRotationPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/DrawSVGPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/EaselPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/EndArrayPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/ModifiersPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/MorphSVGPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/Physics2DPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/PhysicsPropsPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/RaphaelPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/RoundPropsPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/ScrambleTextPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/ScrollToPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/TEMPLATE_Plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/TextPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/plugins/ThrowPropsPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/utils/Draggable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/gsap-v1_19_1/src/uncompressed/utils/SplitText.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/js/modernizr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/layout/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/inc/layout/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/3d/3d_cube/3d_cube.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/3d/3d_cube/3d_cube.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/3d/3d_cube/3d_cube.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/3d/3d_cube/browser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/3d/3d_cube/browser.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/3d/3d_cube/img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/animate/clickClock/browser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/animate/clickClock/clickClock.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/animate/clickClock/clickClock.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/animate/clickClock/clickClock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/animate/이미지액자depth/browser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/animate/이미지액자depth/imgs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/animate/이미지액자depth/imgs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/animate/이미지액자depth/이미지액자depth.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/material/palette/browser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/material/palette/palette.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/material/palette/palette.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/material/palette/palette.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/material/videoOpenButton/browser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/material/videoOpenButton/btn1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/material/videoOpenButton/material_effect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/material/videoOpenButton/videoOpenButton.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/bezierMove/bezierMove.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/d3/d3_grid_board2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/d3/d3_line1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/d3/data/d3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/d3/data/d3.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/d3/data/data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/d3/data/data2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/d3/js/API.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/d3/js/CHANGES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/d3/js/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/d3/js/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/d3/js/aa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/d3/js/d3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/d3/js/d3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/d3/js/es5-shim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/d3/js/es5-shim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/d3/js/jquery-1.12.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/gradiantRotate/svg_circle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/line-tracer/line-tracer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/line-tracer/line-tracer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/line-tracer/line-tracer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/mosaic/mosaic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/mosaic/mosaic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/neon/TweenMax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/neon/neon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/onePageScroll/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/onePageScroll/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/onePageScroll/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/onePageScroll/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/onePageScroll/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/onePageScroll/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/onePageScroll/mosaic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/onePageScroll/onePageScroll.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/onePageScroll/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/onePageScroll/swiper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../www/motions/practice/svgLineMove/TweenMax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../package.json" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ElmWorkspace">
+    <elmProjects />
+    <settings elmCompilerPath="" elmFormatPath="" elmTestPath="" isElmFormatOnSaveEnabled="false" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/palette.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>real</find>
+      <find>con</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/palette.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/palette.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1280" />
+    <option name="height" value="1440" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="palette" type="b2602c69:ProjectViewProjectNode" />
+              <item name="palette" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f902b953-35d5-47de-b959-a27bcff7296a" name="Default Changelist" comment="" />
+      <created>1562294516431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562294516431</updated>
+      <workItem from="1562294518475" duration="890000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="890000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.249694" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Elm Compiler" />
+      <window_info anchor="bottom" id="Quokka" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Elm" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/palette.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
